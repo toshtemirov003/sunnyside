@@ -1,1 +1,19 @@
 /* FONTS */
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../font/Fraunces-Black.woff2') format('woff2'),
+        url('../font/Fraunces-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('../font/Barlow-SemiBold.woff2') format('woff2'),
+        url('../font/Barlow-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
