@@ -1,0 +1,89 @@
+.site-nav {
+
+}
+.site-nav__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.site-nav__item {
+    &:not(:last-child){
+        margin-right: 47px;
+    }
+}
+.site-nav__item-link { 
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px; 
+    letter-spacing: -0.128571px; 
+    color: $color-white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover{
+        color: $color-perky;
+    }
+}
+.site-nav__item-link--contact {
+    display: block;
+    padding: 16px 30px 15px 32px;
+    font-family: $font-fraunces;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.107143px;
+    text-transform: uppercase;
+    color: $color-blue-black;
+    background-color: $color-white;
+    border-radius: 28px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    &:hover{
+        color: $color-white;
+        // opacity: 0.25;
+        background-color: rgba(255, 255, 255, 0.244);
+    }
+}
+@include breakpoint-down(520px){
+    .site-nav{
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        right: 20px;
+        display: none;
+        width: 100%;
+        max-width: 329px;
+        margin-top: 53px;
+        padding-top: 39px;
+        padding-bottom: 39px;
+        background-color: $color-eyeball;
+    }
+    .site-nav--open{
+        display: block;
+    }
+    .site-nav__list {
+        flex-direction: column;
+    }
+    .site-nav__item {
+        &:not(:last-child){
+            margin-right: 0;
+            margin-bottom: 32px;
+        }
+    }
+    .site-nav__item-link {   
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px; 
+        letter-spacing: -0.142857px; 
+        color: $color-stand-out;
+    }
+    .site-nav__item-link--contact {
+        color: $color-blue-black;
+        background-color: $color-gold;
+        &:hover{
+            color: $color-gold;
+            background-color: $color-blue-black;
+        }
+    }
+}
