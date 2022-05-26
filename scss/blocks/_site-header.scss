@@ -1,0 +1,40 @@
+.site-header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1352px;
+    margin: 0 auto;
+    margin-bottom: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.site-header__logo {
+    width: 170px;
+    height: 33px;
+    display: block;
+    transition: opacity 0.3s ease;
+    &:hover{
+        opacity: 0.5;
+    }
+}
+.site-header__btn{
+    display: none;
+    width: 24px;
+    height: 18px;
+    background-color: transparent;
+    border: none;
+    opacity: 0.5;
+}
+@include breakpoint-down(520px){
+    .site-header {
+        padding: 0 20px;
+    }
+    .site-header__logo {
+        width: 124px;
+        height: 24px;
+    }
+    .site-header__btn{
+        display: block;
+    }
+}

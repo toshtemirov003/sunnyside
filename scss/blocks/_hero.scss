@@ -1,0 +1,34 @@
+.hero {
+    
+}
+.hero__heading {
+    padding: 0;
+    margin: 0;
+    font-family: $font-fraunces; 
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 69px; 
+    letter-spacing: 8.75px;
+    text-transform: uppercase; 
+    text-align: center;
+    color: $color-white;
+}
+.hero__img{
+    position: absolute;
+    z-index: 1;
+    top: 381px;
+    left: 50%;
+}
+@include breakpoint-down(520px){
+    .hero__heading {
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 6.25px;
+    }
+    .hero__img{
+        position: absolute;
+        z-index: 1;
+        top: 375px;
+        left: 50%;
+    }
+}
