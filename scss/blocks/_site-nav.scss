@@ -2,9 +2,7 @@
 
 }
 .site-nav__list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    @include list-unstyled;
     display: flex;
     align-items: center;
 }
